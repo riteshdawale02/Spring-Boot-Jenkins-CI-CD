@@ -37,6 +37,11 @@ public class ProfesseurController {
         }
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<String> findById(@PathVariable String id) {
+       return "HEllo " + id;
+    }
+
     @PostMapping
     public Professeur createProfesseur(@RequestBody Professeur professeur) {
         professeur.setId(0);
