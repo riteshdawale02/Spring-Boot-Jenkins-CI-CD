@@ -39,7 +39,7 @@ public class ProfesseurController {
 
     @GetMapping("/{id}")
     public ResponseEntity<String> findById(@PathVariable String id) {
-        String greet = "Hello friend " + id;
+        String greet = "Hello " + id + " sir";
        return ResponseEntity.ok(greet);
     }
 
