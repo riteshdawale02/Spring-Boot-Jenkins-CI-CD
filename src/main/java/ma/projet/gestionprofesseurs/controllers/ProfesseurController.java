@@ -37,7 +37,7 @@ public class ProfesseurController {
         }
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/greet/{id}")
     public ResponseEntity<String> greet(@PathVariable String name) {
         String greet = "Hello " + name + " sir";
        return ResponseEntity.ok(greet);
