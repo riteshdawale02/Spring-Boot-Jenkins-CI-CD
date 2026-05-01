@@ -22,7 +22,7 @@ public class SpecialiteController {
 
     @GetMapping("/hi")
     public String hello() {
-        return "HELLO data";
+        return "HELLO dataddf";
     }
     
     @GetMapping("/{id}")
