@@ -38,8 +38,8 @@ public class ProfesseurController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<String> findById(@PathVariable String id) {
-        String greet = "Hello " + id + " sir";
+    public ResponseEntity<String> greet(@PathVariable String name) {
+        String greet = "Hello " + name + " sir";
        return ResponseEntity.ok(greet);
     }
 
