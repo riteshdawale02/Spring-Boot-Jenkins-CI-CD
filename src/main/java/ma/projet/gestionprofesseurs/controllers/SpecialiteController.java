@@ -20,6 +20,11 @@ public class SpecialiteController {
         return specialiteService.findAll();
     }
 
+    @GetMapping("/hi")
+    public String hello() {
+        return "HELLO RITESH";
+    }
+    
     @GetMapping("/{id}")
     public ResponseEntity<Object> findById(@PathVariable int id) {
         Specialite specialite = specialiteService.findById(id);
