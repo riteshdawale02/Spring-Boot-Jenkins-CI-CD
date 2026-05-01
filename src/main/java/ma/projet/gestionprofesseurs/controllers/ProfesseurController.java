@@ -43,6 +43,11 @@ public class ProfesseurController {
        return ResponseEntity.ok(greet);
     }
 
+    @GetMapping("/version")
+    public String versions() {
+        return "Build: " + System.getenv("BUILD_NUMBER");
+    }
+
     @PostMapping
     public Professeur createProfesseur(@RequestBody Professeur professeur) {
         professeur.setId(0);
